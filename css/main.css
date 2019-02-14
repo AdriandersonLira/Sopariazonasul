@@ -1,0 +1,507 @@
+@charset "UTF-8";
+
+/* -- Configurações Gerais -- */
+
+:root { 
+    --cor-fonte: #4f2407;
+    --cor-fundo: #ffb35a;
+}
+
+/* 
+html {
+    scroll-behavior: smooth;
+} 
+*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    color: var(--cor-fonte);
+    animation: 1.5s init;
+}
+
+@keyframes init {
+    0% {
+        opacity: 0;
+    }   
+
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+/* -- header --*/
+
+header {
+    padding: 0.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+header img {
+    width: 13rem;
+    margin: 15px 0px;
+}
+  
+header nav {
+    width: 100%;
+}
+  
+header nav ul {
+    font-size: 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+  
+header nav ul a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid var(--cor-fonte);
+    background-color: #eee;
+}
+  
+header nav ul a.active {
+    background-color: var(--cor-fundo);
+}
+
+
+header a:hover {
+    background-color: var(--cor-fundo);
+}
+
+@media (min-width: 600px) {
+    header nav ul {
+        list-style: none;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: center;
+      }
+    
+      header nav ul a {
+        text-align: center;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        border-bottom: none;
+        margin: 0 10px;
+      }
+    
+      header nav ul a.active {
+        background-color: var(--cor-fundo);
+      }
+}
+
+@media (min-width: 800px) {
+    header img {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    header img {
+        margin-left: 7%;
+        margin-bottom: 25px;
+        width: 14rem;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+
+    header nav ul a {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 1700px) {
+    header img {
+        margin-left: 10%;
+        margin-bottom: 40px;
+        width: 32rem;
+    }
+
+    header nav ul {
+        margin-right: 10%;
+        font-size: 30px;
+    }
+}
+
+/* -- main --*/
+
+@media(min-width: 800px) {
+    .slide {
+        background-image: url(../img/sopa.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide {
+        height: 620px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .slide {
+        height: 800px;
+    }
+} 
+
+@media (min-width: 2000px) {
+    .slide {
+        height: 1000px;
+    }
+}
+
+/* --   section contato   -- */
+
+.contato {
+    margin-bottom: 40px;
+}
+
+.contato #contato {
+	text-align: center;
+	font-size: 28px;
+}
+
+.container {
+    font-size: 20px;
+}
+
+.contato .contat {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .contat img {
+    align-self: center;
+    margin: 7px 15px 7px 0px;
+}
+
+.contato .horario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 580px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,auto); 
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        font-size: 28px;
+        grid-template-columns: repeat(2,40%);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    .contato {
+        height: 300px;
+    }
+
+    .contato #contato {
+        font-size: 37px;
+    }
+
+    .container {
+        font-size: 32px;
+    }
+
+    .contato .container .contat img {
+        width: 40px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .contato {
+        height: 350px;
+    }
+
+    .contato #contato {
+        font-size: 40px;
+    }
+
+    .container {
+        font-size: 36px;
+    }
+
+    .contato .container .contat img {
+        width: 45px;
+    }
+}
+
+@media (min-width: 2420px) {
+    .contato {
+        height: 380px;
+    }
+
+    .contato #contato {
+        font-size: 44px;
+    }
+
+    .container {
+        font-size: 40px;
+    }
+}
+
+/* --   section cardapio   -- */
+
+.cardapio {
+    background-color: var(--cor-fundo);
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.cardapio .img {
+    background-image: url(../img/ilustracao.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+.cardapio #cardapio .card {
+    font-size: 26px;
+    text-align: center;
+}
+
+.cardapio #cardapio .opcao {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    justify-content: center;
+    align-items: center;
+}
+
+.cardapio #cardapio .opcao p {
+    font-size: 20px;
+    border-bottom: 1px solid var(--cor-fonte);
+    padding-bottom: 10px;
+    width: 15rem;
+}
+
+@media (min-width: 425px) {
+    .cardapio #cardapio .opcao {
+        grid-template-columns: repeat(2, 35%);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .cardapio .opcao .right {
+        margin-left: 20px;
+    }
+
+    .cardapio #cardapio .opcao p {
+        border-bottom: none;
+        width: auto;
+    }
+
+    .cardapio #cardapio .outros {
+        text-underline-position: under;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 550px) {
+    .cardapio #cardapio .opcao {
+        grid-template-columns: repeat(2, 30%);
+    }
+
+}
+
+@media (min-width: 600px) {
+    .cardapio #cardapio .opcao p {
+        text-align: left;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 758px) {
+    .cardapio {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .cardapio #cardapio .card {
+        font-size: 20px;
+        text-align: center;
+    }   
+
+    .cardapio .opcao .right {
+        margin-left: 0px;
+    }
+
+    .cardapio #cardapio .opcao {
+        height: 170px;
+        grid-template-rows: repeat(3, 35%);
+    }
+
+    .cardapio #cardapio .opcao p {
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .cardapio .img {
+        height: 300px;
+    }
+
+    .cardapio #cardapio .opcao {
+        height: 200px;
+    }
+
+    .cardapio .opcao .right {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cardapio .img {
+        height: 350px;
+    }
+
+    .cardapio #cardapio .card {
+        font-size: 28px;
+    }
+
+    .cardapio #cardapio .opcao {
+        height: 230px;
+    }
+
+    .cardapio #cardapio .opcao p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .cardapio .img {
+        height: 400px;
+    }
+
+    .cardapio #cardapio .opcao {
+        height: 260px;
+    }
+
+    .cardapio #cardapio .opcao p {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1865px) {
+    .cardapio .img {
+        height: 600px;
+    }
+
+    .cardapio #cardapio .opcao {
+        height: 420px;
+    }
+
+    .cardapio #cardapio .card {
+        font-size: 40px;
+    }
+
+    .cardapio #cardapio .opcao p {
+        font-size: 38px;
+    }
+}
+
+/* --   section mapa   -- */
+
+.mapa #localizacao {
+	text-align: center;
+	font-size: 26px;
+}
+
+@media (min-width: 1700px) {
+    .mapa #localizacao {
+        font-size: 34px;
+    }
+}
+
+/* -- footer -- */
+
+footer div {
+    background-color: var(--cor-fundo);
+    padding: 40px;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer img {
+    width: 12.5rem;
+}
+
+footer .copy {
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    nav.saiba {
+        display: inline-block;
+    }
+
+    footer .logo {
+        float: right;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 1300px) {
+    footer div {
+        font-size: 22px;
+    }
+
+    footer .logo img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1700px) {
+    footer div {
+        font-size: 26px;
+    }
+
+    footer .logo img {
+        width: 280px;
+    }
+}
+
+@media (min-width: 2000px) {
+    footer div {
+        font-size: 30px;
+    }
+
+    footer .logo img {
+        width: 300px;
+        margin-right: 80px;
+    }
+}
+
+/* -- Flat icons -- */
+
+.oculto {
+    display: none;
+}

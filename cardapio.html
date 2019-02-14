@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cardápio - Soparia Zona Sul</title>
+    <link rel="stylesheet" href="css/cardapio.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" href="img/sopaicon.png" type="image/x-icon"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="img/SopariaZonaSul.png">
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#jantas">Jantas</a></li>
+                <li><a href="#sanduiches">Sanduíches</a></li>
+                <li><a href="#refrigerantes">Refrigerantes</a></li>
+                <li><a href="#sucos">Sucos</a></li>
+
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section>
+            <section id="jantas">
+                <h2>Jantas</h2>
+                <table>
+                    <tr>
+                        <td>Batata Recheada de: Frango ou Linguiça (Queijo, Requeijão, Presunto)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Purê de Macaxeira c/ Carne de Sol / porção pequena</td>
+                        <td class="td2">R$ 6,50</td>
+                    </tr>
+                    <tr>
+                        <td>Purê de Macaxeira c/ Carne de Sol / porção GRANDE</td>
+                        <td class="td2">R$ 7,50</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Abobora</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Charque</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Inhame</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Macaxeira</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Carne</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Frango</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Feijão</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Carne de Sol</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Cuscuz com Frango / Carne (Guisados)</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Macaxeira com Frango / Carne (Guisados)</td>
+                        <td class="td2">R$ 11,00</td>
+                    </tr>
+                    <tr>
+                        <td>Inhame com Frango / Carne (Guisados)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Batata doce com Frango / Carne (Guisados)</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Lasanha(Carne)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz Cremoso (Arroz Integral / Frango Desfiado / Presunto / Queijo / Requeijão / Milho verde / Ovo)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Cuscuz Recheado (Cuscuz / Frango Desfiado / Presunto / Queijo / Requeijão / Milho Verde / Ovo)</td>
+                        <td class="td2">R$ 11,00</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz Integral com Creme de Frango (Frango Desfiado, Requeijão, Milho Verde)</td>
+                        <td class="td2">R$ 10,00</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sanduiches">
+                <h2>Sanduíches</h2>
+                <table>
+                    <tr>
+                        <td>Queijo - (Pão Bola / Queijo)</td>
+                        <td class="td2">R$ 6,50</td>
+                    </tr>
+                    <tr>
+                        <td>Misto - (Pão bola / Presunto / Queijo)</td>
+                        <td class="td2">R$ 6,50</td>
+                    </tr>
+                    <tr>
+                        <td>Hambúguer - (Pão Bola / Hambúguer / Salada)</td>
+                        <td class="td2">R$ 6,50</td>
+                    </tr>
+                    <tr>
+                        <td>Americano - (Pão Bola / Ovo / Presunto / Quejo / Salada)</td>
+                        <td class="td2">R$ 7,50</td>
+                    </tr>
+                    <tr>
+                        <td>X-Burguer - (Pão Bola / Hambúguer / Queijo / Salada)</td>
+                        <td class="td2">R$ 7,50</td>
+                    </tr>
+                    <tr>
+                        <td>Intermédiario - (Pão Bola / Hambúguer / Presunto / Queijo / Salada)</td>
+                        <td class="td2">R$ 8,50</td>
+                    </tr>
+                    <tr>
+                        <td>Mega-Americano - (Pão Bola / Ovo / Salsicha / Presunto / Queijo / Salada)</td>
+                        <td class="td2">R$ 8,50</td>
+                    </tr>
+                    <tr>
+                        <td>Mega-Frango - (Pão Bola / Frango Desfiado / Ovo / Presunto / Queijo / Salada / Hambúguer)</td>
+                        <td class="td2">R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>X-Frango - (Pão Bola / Frango Desfiado / Ovo / Presunto / Queijo / Salada)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Inter-Carne de sol - (Pão Bola / Hambúguer / Presunto / Queijo / Carne de sol Desfiada / Salada)</td>
+                        <td class="td2">R$ 9,50</td>
+                    </tr>
+                    <tr>
+                        <td>X-Bacon - (Pão Bola / Hambúguer / Queijo / Bacon / Salada)</td>
+                        <td class="td2">R$ 8,50</td>
+                    </tr>
+                    <tr>
+                        <td>Ex-Bacon - (Pão Bola / Hambúguer / Presunto / Queijo / Bacon / Salada)</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Especial - (Pão Bola / Hambúguer / Presunto / Queijo / Ovo / Salada)</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Super-Especial - (Pão Bola / 2 Hambúgueres / Presunto / 2 Queijos / Ovo / Salada)</td>
+                        <td class="td2">R$ 11,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bomba - (Pão Bola / Hambúguer / Presunto / Queijo / Ovo / Salsicha / Bacon / Salada)</td>
+                        <td class="td2">R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Super-Bomba - (Pão Bola / 2 Hambúgueres / Presunto /2 Queijos/Ovo/etc)</td>
+                        <td class="td2">R$ 15,00</td>
+                    </tr>
+                </table>    
+            </section>
+            <section id="refrigerantes">
+                <h2>Refrigerantes</h2>
+                <table>
+                    <tr>
+                        <td>Coca-cola / 2 litros</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Coca-cola / 1 litro</td>
+                        <td class="td2">R$ 7,00</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta / 2 litros</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta / 1 litro</td>
+                        <td class="td2">R$ 7,00</td>
+                    </tr>
+                    <tr>
+                        <td>Guaraná Antártica / 2 litros</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Guaraná Antártica / 1 litro</td>
+                        <td class="td2">R$ 7,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite / 2 litros</td>
+                        <td class="td2">R$ 9,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite / 1 litro</td>
+                        <td class="td2">R$ 7,00</td>
+                    </tr>
+                    <tr>
+                        <td>Coca-cola, Fanta, Sprite, Guaraná 500ml</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Coca-cola / lata 350ml</td>
+                        <td class="td2">R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta / 350ml</td>
+                        <td class="td2">R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>Guaraná Antártica / 350ml</td>
+                        <td class="td2">R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite / 350ml</td>
+                        <td class="td2">R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>Coca-cola Zero / lata 350ml</td>
+                        <td class="td2">R$ 5,00</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="sucos">
+
+                <h2>Sucos</h2>
+                <table>
+                    <tr>
+                        <td>Sabores - copo 250ml</td>
+                        <td class="td2">R$ 3,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sabores - copo 250ml</td>
+                        <td class="td2">R$ 6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Din-din Sabores</td>
+                        <td class="td2">R$ 2,00</td>
+                    </tr>
+                    <tr>
+                        <td>Água Mineral 500ml</td>
+                        <td class="td2">R$ 2,00</td>
+                    </tr>
+                    <tr>
+                        <td>Água Mineral 500ml c/ gás</td>
+                        <td class="td2">R$ 2,50</td>
+                    </tr>
+                    <tr>
+                        <td>Água Mineral 1,5L</td>
+                        <td class="td2">R$ 3,50</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav class="saiba">
+                <p>QUEREMOS OUVIR VOCÊ</p>
+
+                <p>Envie-nos suas dúvidas, elogios sugestões ou reclamações.</p>
+
+                <p><a href="form.html">Saiba Mais</a></p>
+            </nav>
+            <nav class="logo"><img src="img/SopariaZonaSul.png"></nav>
+            <nav class="copy">
+                <p>Copyright 2018 &copy; Soparia Zona Sul - Todos os direitos reservados.</p>
+            </nav>
+        </div>
+        <div class="oculto">
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+    </footer>
+</body>
+</html>

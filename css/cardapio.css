@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/* -- Configurações Gerais -- */
+
+:root {
+    --cor-fonte: #4f2407;
+    --cor-fundo: #ffb35a;
+}
+
+/* 
+html {
+    scroll-behavior: smooth;
+}
+*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    color: var(--cor-fonte);
+    animation: 1.5s init;
+}
+
+@keyframes init {
+    0% {
+        opacity: 0;
+    }   
+
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+/* -- header --*/
+
+header {
+    padding: 0.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+header img {
+    width: 13rem;
+    margin: 15px 0px;
+}
+  
+header nav {
+    width: 100%;
+}
+  
+header nav ul {
+    font-size: 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+  
+header nav ul a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid var(--cor-fonte);
+    background-color: #eee;
+}
+  
+header nav ul a.active {
+    background-color: var(--cor-fundo);
+}
+
+
+header a:hover {
+    background-color: var(--cor-fundo);
+}
+
+@media (min-width: 710px) {
+    header nav ul {
+        list-style: none;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: center;
+      }
+    
+      header nav ul a {
+        text-align: center;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        border-bottom: none;
+        margin: 0 10px;
+      }
+    
+      header nav ul a.active {
+        background-color: var(--cor-fundo);
+      }
+}
+
+@media (min-width: 800px) {
+    header img {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    header {
+        flex-direction: row;
+    }
+
+    header img {
+        margin-left: 7%;
+        margin-bottom: 25px;
+        width: 14rem;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+
+    header nav ul a {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 1700px) {
+    header img {
+        margin-left: 10%;
+        margin-bottom: 40px;
+        width: 32rem;
+    }
+
+    header nav ul {
+        margin-right: 10%;
+        font-size: 30px;
+    }
+}
+
+/* -- main --*/
+
+main section{
+    padding: 1% 4% 2.5% 4%;
+}
+
+main section table td.td2 {
+    text-align: right;
+}
+
+@media (min-width:1280px) {
+    main section#jantas table{
+        background-image: url(../img/jantar.svg);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90%; 
+    }
+
+    main section#sanduiches table{
+        background-image: url(../img/burguer.svg);
+        background-repeat: no-repeat;
+        background-size: 13%;
+        background-position: 92%;
+    }
+
+    main section#refrigerantes table{
+        background-image: url(../img/soda.svg);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90%;
+    }
+
+    main section#sucos table{
+        background-image: url(../img/suco.svg);
+        background-repeat: no-repeat;
+        background-size: 13%;
+        background-position: 90%;
+    }
+}
+
+@media (min-width: 1700px) {
+    main section h2 {
+        font-size: 30px;
+    }
+
+    main section table td {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 2160px) {
+    main section#sucos table{
+        background-size: 11%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table td{
+  padding: 5px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* -- footer -- */
+
+footer div {
+    background-color: var(--cor-fundo);
+    padding: 40px;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer img {
+    width: 12.5rem;
+}
+
+footer .copy {
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    nav.saiba {
+        display: inline-block;
+    }
+
+    footer .logo {
+        float: right;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 1300px) {
+    footer div {
+        font-size: 22px;
+    }
+
+    footer .logo img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1700px) {
+    footer div {
+        font-size: 26px;
+    }
+
+    footer .logo img {
+        width: 280px;
+    }
+}
+
+@media (min-width: 2000px) {
+    footer div {
+        font-size: 30px;
+    }
+
+    footer .logo img {
+        width: 300px;
+        margin-right: 80px;
+    }
+}
+
+/* -- Flat icons -- */
+
+.oculto {
+    display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envie sua resposta - Soparia Zona Sul</title>
+    <link rel="stylesheet" href="css/formulario.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" href="img/sopaicon.png" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <img src="img/SopariaZonaSul.png">
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend><h3>Fale Conosco</h3></legend>
+                <form name="form1" action="mailto:cmanoel17@gmail.com" enctype="text/plain" method="POST">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="nome">Cliente: *</label></td>
+                            </tr>
+                            <tr>
+                                <td><input id="nome" type="text" name="nome" placeholder="Nome" required name=nome></td>
+                            </tr>
+                            
+                            <tr class="row">
+                                <td><label for="email">E-mail: *</label></td>
+                            </tr>
+                            <tr>
+                                <td><input id="email" type="email" name="email" placeholder="E-mail" required name=email></td>
+                            </tr>
+
+                            <tr class="row">
+                                <td><label for="tel">Telefone: *</label></td>
+                            </tr>
+                            <tr>
+                                <td><input id="tel" type="tel" name="telefone" placeholder="Telefone" required name=telefone></td>
+                            </tr>
+                            <tr class="row">
+                                <td>Sexo: <input id="male" name="sexo" type="radio" value="Masculino"> <label for="male">Masculino</label> <input id="femi" name="sexo" type="radio" value="Feminino"> <label for="femi">Feminino</label> </td>
+                            </tr>
+                            <tr class="row">
+                                <td><textarea name="txtopiniao" maxlength="1000" placeholder="Dê sua opinião" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input id="submit" type="submit" value="Enviar" name="submit"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </fieldset>       
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav class="logo"><img src="img/SopariaZonaSul.png"></nav>
+            <nav class="copy">
+                <p>Copyright 2018 &copy; Soparia Zona Sul - Todos os direitos reservados.</p>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
