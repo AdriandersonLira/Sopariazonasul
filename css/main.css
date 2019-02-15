@@ -136,7 +136,7 @@ header a:hover {
     }
 
     header nav ul {
-        margin-right: 10%;
+        margin-right: 10%;https://github.com/cubonetwork/frontend-challenge
         font-size: 30px;
     }
 }
@@ -448,6 +448,11 @@ footer div {
 
 footer .logo {
     text-align: center;
+}
+
+footer a {
+        text-underline-position: under;
+        text-decoration: underline;
 }
 
 footer img {
