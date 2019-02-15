@@ -173,7 +173,7 @@ header a:hover {
 /* --   section contato   -- */
 
 .contato {
-    padding-top: 0.1;
+    padding-top: 0.1px;
     margin-bottom: 40px;
 }
 
@@ -430,7 +430,7 @@ header a:hover {
 /* --   section mapa   -- */
 
 .mapa #localizacao {
-	padding-top: 0.1;
+	padding-top: 0.1px;
 	text-align: center;
 	font-size: 26px;
 }
