@@ -219,6 +219,11 @@ footer div {
     padding: 40px;
 }
 
+footer a {
+    text-underline-position: under;
+    text-decoration: underline;
+}
+
 footer .logo {
     text-align: center;
 }
