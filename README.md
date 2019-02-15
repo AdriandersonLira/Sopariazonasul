@@ -9,6 +9,9 @@
 ## Descrição das funcionalidades
 
 ## Contato
-[Adrianderson Lira](https://github.com/AdriandersonLira)
-[adriandersonmusica@gmail.com]
-[Carlos Manoel Nunes]
+Adrianderson Lira:
+[Github](https://github.com/AdriandersonLira)
+[Gmail](adriandersonmusica@gmail.com)
+[Linkedin](https://www.linkedin.com/in/adrianderson-lira-932981176/)
+
+Carlos Manoel Nunes:
