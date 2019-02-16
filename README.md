@@ -23,7 +23,7 @@ Adrianderson Lira:
 
 adriandersonmusica@gmail.com 
 
-[Linkedin](https://www.linkedin.com/in/adrianderson-lira-932981176/)
+[Linkedin](https://www.linkedin.com/in/adrianderson-lira-932981176)
 
 Carlos Manoel Nunes:
 
