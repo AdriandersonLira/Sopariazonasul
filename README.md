@@ -27,18 +27,18 @@
 </p>
 <br>
 
-## 🚀 Tecnologias
+## Tecnologias 🚀
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-## 💻 Projeto
+## Projeto 💻
 
 Site criado como parte dos requisitos de avaliação da disciplina de Linguagem de Marcação do curso de Sistemas para Internet do IFPB, campus João Pessoa
 
-## 🔖 Layout
+## Layout 🔖
 
 O site contém o cardápio da soparia, horário de funcionamento, informação sobre localização e formulário para ouvir opinião dos clientes.
 
@@ -53,13 +53,13 @@ O site contém o cardápio da soparia, horário de funcionamento, informação s
 - responsividade
 - recursos da Web
 
-### Inspirações
+#### Inspirações
 
 [Site Cubo Network](https://github.com/cubonetwork/frontend-challenge)
 
 Você pode visualizar o projeto no formato através [desse link](https://adriandersonlira.github.io/sopariazonasul/). Em qualquer dispositivo.
 
-## 🤔 Como contribuir
+## Como contribuir 🤔
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
@@ -68,7 +68,7 @@ Você pode visualizar o projeto no formato através [desse link](https://adriand
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-## 📞 Contato
+## Contato 📞
 
 Adrianderson Lira:
 
@@ -79,4 +79,3 @@ adriandersonmusica@gmail.com
 ---
 
 Feito com ♥ by Adrianderson Lira
-
